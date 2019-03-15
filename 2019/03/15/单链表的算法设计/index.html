@@ -105,25 +105,27 @@
 
 
 
-  <meta name="description" content="当我们经历万般千辛搭建好我们的博客后，我们终于开始了装 * 的时刻，但是我们会发现每次使用hexo deploy提交之后，再在我们的浏览器上登录的我们的域名却发现无法登陆，再登到我们的github上看发现CNAME没有了.重建之后又好了。 解决方案： 在blog/source目录下重建一个无后缀的CNAME文件，里面写上你的域名，就可以了。">
+  <meta name="description" content="当学习完单链表后，仔细回忆回忆，单链表还是很容易掌握的，但是还是要仔细认真的品味。">
 <meta name="keywords" content="分享">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何解决每次布局都要重建CNAME问题">
-<meta property="og:url" content="http://yoursite.com/2019/03/07/经验/index.html">
+<meta property="og:title" content="单链表的算法设计">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/单链表的算法设计/index.html">
 <meta property="og:site_name" content="sofency">
-<meta property="og:description" content="当我们经历万般千辛搭建好我们的博客后，我们终于开始了装 * 的时刻，但是我们会发现每次使用hexo deploy提交之后，再在我们的浏览器上登录的我们的域名却发现无法登陆，再登到我们的github上看发现CNAME没有了.重建之后又好了。 解决方案： 在blog/source目录下重建一个无后缀的CNAME文件，里面写上你的域名，就可以了。">
+<meta property="og:description" content="当学习完单链表后，仔细回忆回忆，单链表还是很容易掌握的，但是还是要仔细认真的品味。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-08T12:04:02.313Z">
+<meta property="og:image" content="http://yoursite.com/images/linklist.jpg">
+<meta property="og:updated_time" content="2019-03-15T16:16:11.706Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何解决每次布局都要重建CNAME问题">
-<meta name="twitter:description" content="当我们经历万般千辛搭建好我们的博客后，我们终于开始了装 * 的时刻，但是我们会发现每次使用hexo deploy提交之后，再在我们的浏览器上登录的我们的域名却发现无法登陆，再登到我们的github上看发现CNAME没有了.重建之后又好了。 解决方案： 在blog/source目录下重建一个无后缀的CNAME文件，里面写上你的域名，就可以了。">
+<meta name="twitter:title" content="单链表的算法设计">
+<meta name="twitter:description" content="当学习完单链表后，仔细回忆回忆，单链表还是很容易掌握的，但是还是要仔细认真的品味。">
+<meta name="twitter:image" content="http://yoursite.com/images/linklist.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/07/经验/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/单链表的算法设计/">
 
 
 
@@ -133,7 +135,7 @@
   };
 </script>
 
-  <title>如何解决每次布局都要重建CNAME问题 | sofency</title>
+  <title>单链表的算法设计 | sofency</title>
   
 
 
@@ -382,7 +384,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/经验/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/单链表的算法设计/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sofency">
@@ -399,7 +401,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何解决每次布局都要重建CNAME问题
+          <h1 class="post-title" itemprop="name headline">单链表的算法设计
 
               
             
@@ -425,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2019-03-07 17:37:43" itemprop="dateCreated datePublished" datetime="2019-03-07T17:37:43+08:00">2019-03-07</time>
+              <time title="创建时间：2019-03-15 21:15:23" itemprop="dateCreated datePublished" datetime="2019-03-15T21:15:23+08:00">2019-03-15</time>
             
 
             
@@ -442,7 +444,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-08 20:04:02" itemprop="dateModified" datetime="2019-03-08T20:04:02+08:00">2019-03-08</time>
+                <time title="修改时间：2019-03-16 00:16:11" itemprop="dateModified" datetime="2019-03-16T00:16:11+08:00">2019-03-16</time>
               
             
           </span>
@@ -459,7 +461,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
 
                 
                 
@@ -501,10 +503,18 @@
       
 
       
-        <p>当我们经历万般千辛搭建好我们的博客后，我们终于开始了装 * 的时刻，但是我们会发现每次使用<font color="red">hexo deploy</font>提交之后，再在我们的浏览器上登录的我们的域名却发现无法登陆，再登到我们的github上看发现<code>CNAME</code>没有了.重建之后又好了。</p>
-<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><blockquote>
-<p>在<code>blog/source</code>目录下重建一个无后缀的<code>CNAME</code>文件，里面写上你的域名，就可以了。</p>
-</blockquote>
+        <p>当学习完单链表后，仔细回忆回忆，单链表还是很容易掌握的，但是还是要仔细认真的品味。<br><a id="more"></a><br>单链表可以看做是由若干个<code>结点</code>由指针指向后继结点一种表.<br>结点是由<code>数据域</code>和<code>指针域</code>构成。真正有效的存储是数据域,指针域负责指向下一个结点存储的位置,所以它的存储密度都是小于1,而之前学习的顺序表存储密度都是1.<br>那么如何定义结构体<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	Eletype data;<span class="comment">//数据域</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span>*<span class="title">next</span>;</span><span class="comment">//指针域</span></span><br><span class="line">&#125;node,*Node;</span><br></pre></td></tr></table></figure></p>
+<p>那么单链表具体可以做些什么操作哪?</p>
+<ol>
+<li>初始化操作,主要是对于头结点来说的,头结点一般不存储数据<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">initnNode</span><span class="params">(Node head)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	head=(Node)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(node));</span><br><span class="line">	head-&gt;next=null;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>2.插入结点操作,插入分为两种,头插法和尾插法<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insertData</span><span class="params">(Node head,<span class="keyword">int</span> data)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Node temp=(Node)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(node));</span><br><span class="line">	temp-&gt;data=data;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">if</span> 0  <span class="comment">//头插法</span></span></span><br><span class="line">  temp-&gt;next=head-&gt;next;</span><br><span class="line">  head-&gt;next=temp;<span class="comment">//时间复杂度为O(1)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span><span class="comment">//尾插法</span></span></span><br><span class="line">  Node p;</span><br><span class="line">  p=head;</span><br><span class="line">  <span class="keyword">while</span>(p-&gt;next!=<span class="literal">NULL</span>)<span class="comment">//时间复杂度为O(n)此处不能用p来进行判断,若p为尾结点的话也符合条件，但是进入循环后就不符合和会发生野指针的情况</span></span><br><span class="line">  &#123;</span><br><span class="line">  	p=p-&gt;next;</span><br><span class="line">  &#125;</span><br><span class="line">  p-&gt;next=temp;</span><br><span class="line">  temp-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.查找结点操作,由于单链表需要用指针进行移动,所以不能用二分法(假设存储的数据是有顺序的)进行查找<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">findData</span><span class="params">(Node head,<span class="keyword">int</span> data)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Node p;</span><br><span class="line">	p=head;</span><br><span class="line">	<span class="keyword">while</span>(p!=<span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(p-&gt;data==data)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"已找到数据"</span>);</span><br><span class="line">			<span class="keyword">break</span>;<span class="comment">//退出循环</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			p=p-&gt;next;</span><br><span class="line">			<span class="keyword">if</span>(p==<span class="literal">NULL</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"未找到该数据"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4.删除结点<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">deleteData</span><span class="params">(Node head,<span class="keyword">int</span> data)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Node p;</span><br><span class="line">	p=head;</span><br><span class="line">	<span class="keyword">while</span>(p!=<span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		Node temp;</span><br><span class="line">		<span class="keyword">if</span>(p-&gt;data==data)</span><br><span class="line">		&#123;</span><br><span class="line">			temp=p-&gt;next;</span><br><span class="line">			p-&gt;next=p-&gt;next-&gt;next;</span><br><span class="line">			<span class="built_in">free</span>(temp);<span class="comment">//释放出删除的结点空间</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			p=p-&gt;next;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>5.删除单链表中的最大值结点<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">delMaxNode</span><span class="params">(Node head)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Node p=head-&gt;next;</span><br><span class="line">	Node pre=head;<span class="comment">//p和pre是同步运动的</span></span><br><span class="line">	Node maxp=p;</span><br><span class="line">	Node maxpre=pre;</span><br><span class="line">	which(p!=<span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(maxp-&gt;data&lt;p-&gt;data)</span><br><span class="line">		&#123;</span><br><span class="line">			maxp=p;</span><br><span class="line">			maxpre=pre;<span class="comment">//最大值的前驱</span></span><br><span class="line">		&#125;</span><br><span class="line">		pre=p;</span><br><span class="line">		p=p-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	maxpre-&gt;next=maxp-&gt;next;</span><br><span class="line">	<span class="built_in">free</span>(maxp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>6.结点有序递增<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(Node head)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Node p,pre,q;</span><br><span class="line">	p=head-&gt;next-&gt;next;<span class="comment">//p指向L的第二个数据结点</span></span><br><span class="line">	head-&gt;next-&gt;next=<span class="literal">NULL</span>;<span class="comment">//构造只含一个数据结点的有序表</span></span><br><span class="line">	<span class="keyword">while</span>(p!=<span class="literal">NULL</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		q=p-&gt;next;</span><br><span class="line">		pre=head;</span><br><span class="line">		<span class="keyword">while</span>(pre-&gt;next!=<span class="literal">NULL</span>&amp;&amp;pre-&gt;next-&gt;data&lt;p-&gt;data)</span><br><span class="line">		&#123;</span><br><span class="line">			pre=pre-&gt;next;</span><br><span class="line">		&#125;</span><br><span class="line">		p-&gt;next=pre-&gt;next;</span><br><span class="line">		pre-&gt;next=p;</span><br><span class="line">		p=q;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>解释如下图<br><img src="/images/linklist.jpg" alt="解释"></p>
 
       
     </div>
@@ -576,8 +586,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/07/链表实现快速排列/" rel="next" title="链表实现快速排列">
-                <i class="fa fa-chevron-left"></i> 链表实现快速排列
+              <a href="/2019/03/15/关于IDEA无法找到主类/" rel="next" title="关于IDEA无法找到或无法加载主类">
+                <i class="fa fa-chevron-left"></i> 关于IDEA无法找到或无法加载主类
               </a>
             
           </div>
@@ -585,10 +595,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/09/优质线性表删除元素算法/" rel="prev" title="优质线性表删除算法">
-                优质线性表删除算法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -638,17 +644,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -773,23 +770,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案："><span class="nav-number">1.</span> <span class="nav-text">解决方案：</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -975,7 +955,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/03/07/经验/'
+    refer: '2019/03/15/单链表的算法设计/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
